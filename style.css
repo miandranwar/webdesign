@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #1c6ec9;
+background: linear-gradient(67deg, rgba(28,110,201,1) 0%, #fb2eef 100%);
+}
+.header::before {
+    content:"";
+    width: 520px;
+    height: 550px;
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+    background-image: url(image2.png);
+    background-size: 100% 100%;
+}
+
+.nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+
+}
+.logo a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.logo a:hover {
+    color: red;
+    text-shadow: 2px 4px 6px #000;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+
+}
+.navbar ul a {
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.navbar ul a:hover {
+    border-top: solid 2px #ff0015;
+    border-bottom: solid 2px #ff0015;
+}
+
+.contact_btn {
+    border: solid 2px transparent;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+}
+.contact_btn:hover {
+    background-color: blue;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.content h1 {
+    color: #fff;
+    text-shadow: 2px 6px 4px #000;
+    font-size: 4.35rem;
+    font-weight: 500;
+}
+.content h2 {
+    color: #ff0015;
+    text-shadow: 2px 2px 6px #000;
+}
+.content h2::before {
+    content: "";
+    width: 80px;
+    height:auto;
+    border: 2px solid yellow;
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+}
+
+.social {
+    position: absolute;
+    right:0;
+    top:40%;
+    width:100px;
+    height: auto;
+}
+.socialicon {
+    width:40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialicon:hover {
+    border: solid 2px red;
+}
